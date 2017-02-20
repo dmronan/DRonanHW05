@@ -72,7 +72,7 @@
                                 <rect key="frame" x="16" y="173" width="343" height="178"/>
                             </pickerView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WbD-VT-xwh">
-                                <rect key="frame" x="42" y="335" width="291" height="28"/>
+                                <rect key="frame" x="42.5" y="335" width="290.5" height="28"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rounding:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFb-3s-esG">
                                         <rect key="frame" x="0.0" y="0.0" width="77.5" height="28"/>
@@ -95,6 +95,18 @@
                                     </segmentedControl>
                                 </subviews>
                             </stackView>
+                            <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Y9i-8E-V3j">
+                                <rect key="frame" x="24" y="29" width="33" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="+"/>
+                                    <segment title="-"/>
+                                </segments>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="posNegPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="ucR-Kr-4vj"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -124,13 +136,14 @@
                         <outlet property="decimalSegment" destination="d9X-FN-h9V" id="SVA-P7-Hc2"/>
                         <outlet property="formulaPicker" destination="iDc-9J-RsZ" id="OU7-Kr-O2j"/>
                         <outlet property="fromUnitsLabel" destination="MM3-lu-sfm" id="sk7-81-qfF"/>
+                        <outlet property="posNeg" destination="Y9i-8E-V3j" id="xTb-cG-9m7"/>
                         <outlet property="resultsLabel" destination="gWu-am-GWM" id="e39-W3-Amr"/>
                         <outlet property="userInput" destination="Ijq-G2-bny" id="qgC-cu-IDx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-15" y="91"/>
+            <point key="canvasLocation" x="-15.199999999999999" y="90.404797601199405"/>
         </scene>
     </scenes>
 </document>
